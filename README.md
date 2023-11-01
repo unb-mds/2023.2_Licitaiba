@@ -8,6 +8,8 @@
 
 O projeto "Licitaíba" é uma iniciativa destinada a automatizar a coleta e o acompanhamento de informações relacionadas a licitações públicas no estado da Paraíba, Brasil.
 
+### 🔗 Acesse o site:
+https://unb-mds.github.io/2023.2_Licitaiba/
 
 ⚠️ **Este repositório trata-se do front-end do Projeto Licitaíba. Visite o [repositório principal](https://github.com/unb-mds/2023-2-Squad04) para encontrar documentações, issues e demais assuntos relacionados ao projeto.**
 
