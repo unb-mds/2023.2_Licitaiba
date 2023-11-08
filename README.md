@@ -32,7 +32,7 @@ Vamos entrar na pasta "src" do projeto usando o terminal. Certifique-se de estar
 cd 2023.2_Licitaiba/src
 ```
 
-### 3. 💻 Construindo a imagem com e iniciando com o Docker
+### 3. 💻 Construindo a imagem e iniciando com o Docker
 Agora, você pode usar o seguinte comando para construir a imagem Docker e iniciar os serviços:
 ```
 docker build -t website-licitaiba .
