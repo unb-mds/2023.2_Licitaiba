@@ -32,6 +32,25 @@
 </head>
 
 <body>
+    <!-- LOADER -->
+    <style>
+        #loader {
+            position: fixed;
+            z-index: 99999;
+            background: #1a1a1a;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <div id="loader">
+        <div class="spinner-border text-white" role="status">
+            <span class="sr-only">Carregando...</span>
+        </div>
+    </div>
     <div id="menu"></div>
 
     <section class="erro">
