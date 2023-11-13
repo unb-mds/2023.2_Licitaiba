@@ -28,7 +28,26 @@ const includeHTML = (path, targetElementId) => {
 
 //INCLUI O MENU
 includeHTML('menu.html', 'menu')
-    .then(() => {})
+    .then(() => {
+        // TROCANDO ENTRE MODO ESCURO E MODO CLARO //
+        const colorToggleBtn = document.getElementById('color-toggle');
+        let isLightMode = localStorage.getItem('isLightMode') === 'true';
+
+        colorToggleBtn.innerText = isLightMode ? "🌒 Escuro" : "☀️ Claro";
+
+        if (isLightMode) {
+            document.body.classList.add('dark-mode');
+        }
+
+        colorToggleBtn.addEventListener('click', () => {
+            isLightMode = !isLightMode;
+            document.body.classList.toggle('dark-mode', isLightMode);
+
+            localStorage.setItem('isLightMode', isLightMode);
+
+            colorToggleBtn.innerText = isLightMode ? "🌒 Escuro" : "☀️ Claro";
+        });
+    })
     .catch((error) => {
         console.error(error);
     });
