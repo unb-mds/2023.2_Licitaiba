@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap');
-:root {
+ :root {
     --txt-body: #1a1a1a;
     --bg-1: #ffffff;
     --bg-2: #e0e0e0;
@@ -50,7 +50,7 @@ header {
 .subtopico {
     font-size: 35px;
     text-align: left;
-    margin-left: 8%;
+    margin-left: 10%;
     font-family: 'Poppins';
 }
 
@@ -273,7 +273,8 @@ input {
     font-family: 'Roboto';
     padding: 0px;
     margin: 40px 5%;
-    font-size: 16px;
+    font-size: 17px;
+    text-align: left;
 }
 
 
@@ -514,8 +515,18 @@ footer {
         padding: 20px;
     }
     .txt-header {
-        font-size: 25px;
+        font-size: 35px;
+        padding: 0px;
         margin-left: 0%;
+    }
+    .coluna-licitaiba {
+        flex: auto!important;
+        max-width: 100%!important;
+        text-align: center!important;
+    }
+    .coluna-membro {
+        padding-right: 0px!important;
+        padding-left: 0px!important;
     }
 }
 
