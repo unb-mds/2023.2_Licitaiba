@@ -294,8 +294,8 @@ input {
 }
 
 .funcionalidades-div {
-    background: #1a1a1a;
-    color: #fff;
+    background: var(--bg-2);
+    color: var(--txt-body);
     padding: 15px;
     border-radius: 20px;
     margin: 10px auto;
