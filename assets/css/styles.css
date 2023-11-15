@@ -55,8 +55,8 @@ header {
 }
 
 .home {
-    margin-top: 110px;
-    min-height: 100vh;
+    margin-top: 160px;
+    min-height: 80vh;
 }
 
 .licitaiba-home-esquerda {
@@ -108,10 +108,14 @@ header {
 }
 
 .equipe,
-.erro,
 .sobre,
 .licitacao {
     background: var(--bg-1);
+}
+.erro {
+    background: var(--bg-1);
+    padding: 50px;
+
 }
 
 .painel-container {
