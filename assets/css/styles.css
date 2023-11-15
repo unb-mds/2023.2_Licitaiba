@@ -112,10 +112,10 @@ header {
 .licitacao {
     background: var(--bg-1);
 }
+
 .erro {
     background: var(--bg-1);
     padding: 50px;
-
 }
 
 .painel-container {
@@ -532,10 +532,19 @@ footer {
         padding-right: 0px!important;
         padding-left: 0px!important;
     }
+    .img-erro {
+        width: 100%!important;
+        margin-top: 100px!important;
+    }
 }
 
 .btn:focus,
 .btn:active {
     outline: none;
     box-shadow: none;
+}
+
+.img-erro {
+    width: 40%;
+    margin-top: 50px;
 }
