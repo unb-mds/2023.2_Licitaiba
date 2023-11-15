@@ -38,56 +38,303 @@
     <div id="menu"></div>
 
     <header>
-        <p class="txt-header">Deseja encontrar alguma licitação?
-
-            <form class="form-inline" style="display:block; margin-top: 10px;">
-                <div class="search-container-licitacao">
-                    <input class="form-control mr-sm-2 search-input" type="search" placeholder="Buscar Licitação" id="search-input-licitacao" aria-label="">
-                    <button id="search-button-licitacao" class="btn btn-outline-success my-2 my-sm-0" type="button">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-                </div>
-            </form>
-
-        </p>
+        <p class="txt-header">Deseja encontrar alguma licitação?</p>
     </header>
 
-
     <section class="licitacao">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <div class="col-sm">
-                        <div class="painel-container">
-                            <div class="painel" id="painel-calc-extras" style="text-align: left">
-                                <div id="calculos-extras"></div>
-                            </div>
-                            <div class="painel" style="text-align: left">
-                                <div class="painel-header">
-                                    <div class="filter-bar">
-                                        <div>
-                                            <label for="municipio">Município:</label>
-                                            <select id="municipio" style="margin-right:10px;">
-                                                <option value="municipio1">Município 1</option>
-                                                <option value="municipio2">Município 2</option>
-                                                <option value="municipio3">Município 3</option>
-                                            </select>
+        <form method="GET" class="form-inline" style="display:block; padding-top:50px;">
+            <div class="search-container-licitacao">
+                <input style="color: var(--txt-body)!important;" class="search-pg-licitacao form-control mr-sm-2 search-input search-licitacao" type="text" placeholder="Buscar Licitação" id="pesquisar-por" name="pesquisar-por" aria-label="">
+                <button id="search-button-licitacao" class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
 
-                                            <label for="data">Data:</label>
-                                            <input type="date" id="data">
-                                        </div>
-                                    </div>
+            <div class="container mt-4" style="margin-bottom: 50px;">
+                <div class="row">
+                    <div style="margin: auto;" class="col-8">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="filtro-municipio">Municipio:</label>
+                                <select class="form-control" id="filtro-municipio" name="filtro-municipio">
+                                    <option value="">Selecione...</option>
+                                    <option value="agua_branca">Água Branca</option>
+                                    <option value="aguiar">Aguiar</option>
+                                    <option value="alagoa_grande">Alagoa Grande</option>
+                                    <option value="alagoa_nova">Alagoa Nova</option>
+                                    <option value="alagoinha">Alagoinha</option>
+                                    <option value="alcantil">Alcantil</option>
+                                    <option value="algodao_de_jandaira">Algodão de Jandaíra</option>
+                                    <option value="alhandra">Alhandra</option>
+                                    <option value="amparo">Amparo</option>
+                                    <option value="aparecida">Aparecida</option>
+                                    <option value="aracagi">Araçagi</option>
+                                    <option value="arara">Arara</option>
+                                    <option value="araruna">Araruna</option>
+                                    <option value="areia">Areia</option>
+                                    <option value="areia_de_baraunas">Areia de Baraúnas</option>
+                                    <option value="areial">Areial</option>
+                                    <option value="aroeiras">Aroeiras</option>
+                                    <option value="assuncao">Assunção</option>
+                                    <option value="baia_da_traicao">Baía da Traição</option>
+                                    <option value="bananeiras">Bananeiras</option>
+                                    <option value="barauna">Baraúna</option>
+                                    <option value="barra_de_santa_rosa">Barra de Santa Rosa</option>
+                                    <option value="barra_de_santana">Barra de Santana</option>
+                                    <option value="barra_de_sao_miguel">Barra de São Miguel</option>
+                                    <option value="bayeux">Bayeux</option>
+                                    <option value="belem">Belém</option>
+                                    <option value="belem_do_brejo_do_cruz">Belém do Brejo do Cruz</option>
+                                    <option value="bernardino_batista">Bernardino Batista</option>
+                                    <option value="boa_ventura">Boa Ventura</option>
+                                    <option value="boa_vista">Boa Vista</option>
+                                    <option value="bom_jesus">Bom Jesus</option>
+                                    <option value="bom_sucesso">Bom Sucesso</option>
+                                    <option value="bonito_de_santa_fe">Bonito de Santa Fé</option>
+                                    <option value="boqueirao">Boqueirão</option>
+                                    <option value="borborema">Borborema</option>
+                                    <option value="brejo_do_cruz">Brejo do Cruz</option>
+                                    <option value="brejo_dos_santos">Brejo dos Santos</option>
+                                    <option value="caapora">Caaporã</option>
+                                    <option value="cabaceiras">Cabaceiras</option>
+                                    <option value="cabedelo">Cabedelo</option>
+                                    <option value="cachoeira_dos_indios">Cachoeira dos Índios</option>
+                                    <option value="cacimba_de_areia">Cacimba de Areia</option>
+                                    <option value="cacimba_de_dentro">Cacimba de Dentro</option>
+                                    <option value="cacimbas">Cacimbas</option>
+                                    <option value="caicara">Caiçara</option>
+                                    <option value="cajazeiras">Cajazeiras</option>
+                                    <option value="cajazeirinhas">Cajazeirinhas</option>
+                                    <option value="caldas_brandao">Caldas Brandão</option>
+                                    <option value="camalau">Camalaú</option>
+                                    <option value="campina_grande">Campina Grande</option>
+                                    <option value="capim">Capim</option>
+                                    <option value="caraubas">Caraúbas</option>
+                                    <option value="carrapateira">Carrapateira</option>
+                                    <option value="casserengue">Casserengue</option>
+                                    <option value="catingueira">Catingueira</option>
+                                    <option value="catole_do_rocha">Catolé do Rocha</option>
+                                    <option value="caturite">Caturité</option>
+                                    <option value="conceicao">Conceição</option>
+                                    <option value="condado">Condado</option>
+                                    <option value="conde">Conde</option>
+                                    <option value="congo">Congo</option>
+                                    <option value="coremas">Coremas</option>
+                                    <option value="coxixola">Coxixola</option>
+                                    <option value="cruz_do_espirito_santo">Cruz do Espírito Santo</option>
+                                    <option value="cubati">Cubati</option>
+                                    <option value="cuite">Cuité</option>
+                                    <option value="cuite_de_mamanguape">Cuité de Mamanguape</option>
+                                    <option value="cuitegi">Cuitegi</option>
+                                    <option value="curral_de_cima">Curral de Cima</option>
+                                    <option value="curral_velho">Curral Velho</option>
+                                    <option value="damiao">Damião</option>
+                                    <option value="desterro">Desterro</option>
+                                    <option value="diamante">Diamante</option>
+                                    <option value="dona_ines">Dona Inês</option>
+                                    <option value="duas_estradas">Duas Estradas</option>
+                                    <option value="emas">Emas</option>
+                                    <option value="esperanca">Esperança</option>
+                                    <option value="fagundes">Fagundes</option>
+                                    <option value="frei_martinho">Frei Martinho</option>
+                                    <option value="gado_bravo">Gado Bravo</option>
+                                    <option value="guarabira">Guarabira</option>
+                                    <option value="gurinhem">Gurinhém</option>
+                                    <option value="gurjao">Gurjão</option>
+                                    <option value="ibiara">Ibiara</option>
+                                    <option value="igaracy">Igaracy</option>
+                                    <option value="imaculada">Imaculada</option>
+                                    <option value="inga">Ingá</option>
+                                    <option value="itabaiana">Itabaiana</option>
+                                    <option value="itaporanga">Itaporanga</option>
+                                    <option value="itapororoca">Itapororoca</option>
+                                    <option value="itatuba">Itatuba</option>
+                                    <option value="jacarau">Jacaraú</option>
+                                    <option value="jerico">Jericó</option>
+                                    <option value="joao_pessoa">João Pessoa</option>
+                                    <option value="joca_claudino">Joca Claudino</option>
+                                    <option value="juarez_tavora">Juarez Távora</option>
+                                    <option value="juazeirinho">Juazeirinho</option>
+                                    <option value="junco_do_serido">Junco do Seridó</option>
+                                    <option value="juripiranga">Juripiranga</option>
+                                    <option value="juru">Juru</option>
+                                    <option value="lagoa">Lagoa</option>
+                                    <option value="lagoa_de_dentro">Lagoa de Dentro</option>
+                                    <option value="lagoa_seca">Lagoa Seca</option>
+                                    <option value="lastro">Lastro</option>
+                                    <option value="livramento">Livramento</option>
+                                    <option value="logradouro">Logradouro</option>
+                                    <option value="lucena">Lucena</option>
+                                    <option value="mae_d_agua">Mãe d'Água</option>
+                                    <option value="malta">Malta</option>
+                                    <option value="mamanguape">Mamanguape</option>
+                                    <option value="manaira">Manaíra</option>
+                                    <option value="marcacao">Marcação</option>
+                                    <option value="mari">Mari</option>
+                                    <option value="marizopolis">Marizópolis</option>
+                                    <option value="massaranduba">Massaranduba</option>
+                                    <option value="mataraca">Mataraca</option>
+                                    <option value="matinhas">Matinhas</option>
+                                    <option value="mato_grosso">Mato Grosso</option>
+                                    <option value="matureia">Maturéia</option>
+                                    <option value="mogeiro">Mogeiro</option>
+                                    <option value="montadas">Montadas</option>
+                                    <option value="monte_horebe">Monte Horebe</option>
+                                    <option value="monteiro">Monteiro</option>
+                                    <option value="mulungu">Mulungu</option>
+                                    <option value="natuba">Natuba</option>
+                                    <option value="nazarezinho">Nazarezinho</option>
+                                    <option value="nova_floresta">Nova Floresta</option>
+                                    <option value="nova_olinda">Nova Olinda</option>
+                                    <option value="nova_palmeira">Nova Palmeira</option>
+                                    <option value="olho_d_agua">Olho d'Água</option>
+                                    <option value="olivedos">Olivedos</option>
+                                    <option value="ouro_velho">Ouro Velho</option>
+                                    <option value="parari">Parari</option>
+                                    <option value="passagem">Passagem</option>
+                                    <option value="patos">Patos</option>
+                                    <option value="paulista">Paulista</option>
+                                    <option value="pedra_branca">Pedra Branca</option>
+                                    <option value="pedra_lavrada">Pedra Lavrada</option>
+                                    <option value="pedras_de_fogo">Pedras de Fogo</option>
+                                    <option value="pedro_regis">Pedro Régis</option>
+                                    <option value="pianco">Piancó</option>
+                                    <option value="picui">Picuí</option>
+                                    <option value="pilar">Pilar</option>
+                                    <option value="piloes">Pilões</option>
+                                    <option value="piloezinhos">Pilõezinhos</option>
+                                    <option value="pirpirituba">Pirpirituba</option>
+                                    <option value="pitimbu">Pitimbu</option>
+                                    <option value="pocinhos">Pocinhos</option>
+                                    <option value="poco_dantas">Poço Dantas</option> 
+                                    <option value="poco_de_jose_de_moura">Poço de José de Moura</option>
+                                    <option value="pombal">Pombal</option>
+                                    <option value="prata">Prata</option>
+                                    <option value="princesa_isabel">Princesa Isabel</option>
+                                    <option value="puxinana">Puxinanã</option>
+                                    <option value="queimadas">Queimadas</option>
+                                    <option value="quixaba">Quixabá</option>
+                                    <option value="remigio">Remígio</option>
+                                    <option value="riachao">Riachão</option>
+                                    <option value="riachao_do_bacamarte">Riachão do Bacamarte</option>
+                                    <option value="riachao_do_poco">Riachão do Poço</option>
+                                    <option value="riacho_de_santo_antonio">Riacho de Santo Antônio</option>
+                                    <option value="riacho_dos_cavalos">Riacho dos Cavalos</option>
+                                    <option value="rio_tinto">Rio Tinto</option>
+                                    <option value="salgadinho">Salgadinho</option>
+                                    <option value="salgado_de_sao_felix">Salgado de São Félix</option>
+                                    <option value="santa_cecilia">Santa Cecília</option>
+                                    <option value="santa_cruz">Santa Cruz</option>
+                                    <option value="santa_helena">Santa Helena</option>
+                                    <option value="santa_ines">Santa Inês</option>
+                                    <option value="santa_luzia">Santa Luzia</option>
+                                    <option value="santa_rita">Santa Rita</option>
+                                    <option value="santa_teresinha">Santa Terezinha</option>
+                                    <option value="santana_de_mangueira">Santana de Mangueira</option>
+                                    <option value="santana_dos_garrotes">Santana dos Garrotes</option>
+                                    <option value="santo_andre">Santo André</option>
+                                    <option value="sao_bentinho">São Bentinho</option>
+                                    <option value="sao_bento">São Bento</option>
+                                    <option value="sao_domingos">São Domingos</option>
+                                    <option value="sao_domingos_do_cariri">São Domingos do Cariri</option>
+                                    <option value="sao_francisco">São Francisco</option>
+                                    <option value="sao_joao_do_cariri">São João do Cariri</option>
+                                    <option value="sao_joao_do_rio_do_peixe">São João do Rio do Peixe</option>
+                                    <option value="sao_joao_do_tigre">São João do Tigre</option>
+                                    <option value="sao_jose_da_lagoa_tapada">São José da Lagoa Tapada</option>
+                                    <option value="sao_jose_de_caiana">São José de Caiana</option>
+                                    <option value="sao_jose_de_espinharas">São José de Espinharas</option>
+                                    <option value="sao_jose_de_piranhas">São José de Piranhas</option>
+                                    <option value="sao_jose_de_princesa">São José de Princesa</option>
+                                    <option value="sao_jose_do_bonfim">São José do Bonfim</option>
+                                    <option value="sao_jose_do_brejo_do_cruz">São José do Brejo do Cruz</option>
+                                    <option value="sao_jose_do_sabugi">São José do Sabugi</option>
+                                    <option value="sao_jose_dos_cordeiros">São José dos Cordeiros</option>
+                                    <option value="sao_jose_dos_ramos">São José dos Ramos</option>
+                                    <option value="sao_mamede">São Mamede</option>
+                                    <option value="sao_miguel_de_taipu">São Miguel de Taipu</option>
+                                    <option value="sao_sebastiao_de_lagoa_de_roca">São Sebastião de Lagoa de Roça</option>
+                                    <option value="sao_sebastiao_do_umbuzeiro">São Sebastião do Umbuzeiro</option>
+                                    <option value="sao_vicente_do_serido">São Vicente do Seridó</option>
+                                    <option value="sape">Sapé</option>
+                                    <option value="serra_branca">Serra Branca</option>
+                                    <option value="serra_da_raiz">Serra da Raiz</option>
+                                    <option value="serra_grande">Serra Grande</option>
+                                    <option value="serra_redonda">Serra Redonda</option>
+                                    <option value="serraria">Serraria</option>
+                                    <option value="sertaozinho">Sertãozinho</option>
+                                    <option value="sobrado">Sobrado</option>
+                                    <option value="solanea">Solânea</option>
+                                    <option value="soledade">Soledade</option>
+                                    <option value="sossego">Sossêgo</option>
+                                    <option value="sousa">Sousa</option>
+                                    <option value="sume">Sumé</option>
+                                    <option value="tacima">Tacima</option>
+                                    <option value="taperoa">Taperoá</option>
+                                    <option value="tavares">Tavares</option>
+                                    <option value="teixeira">Teixeira</option>
+                                    <option value="tenorio">Tenório</option>
+                                    <option value="triunfo">Triunfu</option>
+                                    <option value="uirauna">Uiraúna</option>
+                                    <option value="umbuzeiro">Umbuzeiro</option>
+                                    <option value="varzea">Várzea</option>
+                                    <option value="vieiropolis">Vieirópolis</option>
+                                    <option value="vista_serrana">Vista Serrana</option>
+                                    <option value="zabele">Zabelê</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="filtro-data">Data:</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" id="filtro-data" name="filtro-data" placeholder="Data">
                                 </div>
-                                <div class="painel-body">
+                            </div>
+                            <div class="col">
+                                <label for="filtro-valor">Valor máximo:</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="filtro-valor" name="filtro-valor" placeholder="Digite o valor máximo">
+                                    <div class="input-group-append">
+                                        <button class="btn-3" type="submit" style="margin-left: 10px;padding: 0px 10px;">Filtrar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </form>
 
+        <div class="resultados">
+            <div class="container mt-5" style="margin-top: 0px!important; padding: 15px;">
+                <div class="result-container d-flex justify-content-between align-items-center">
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum in corporis id voluptate architecto</p>
+                    <a href="#" class="details-link" data-toggle="modal" data-target="#myModal">Mais Detalhes</a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detalhes dos Resultados</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Aqui estão os detalhes dos resultados.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-3" style="padding: 5px 10px;" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <div id="footer"></div>
 
 </body>
