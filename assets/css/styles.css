@@ -536,6 +536,9 @@ footer {
         width: 100%!important;
         margin-top: 100px!important;
     }
+    .nav-item {
+        padding: 5px;
+    }
 }
 
 .btn:focus,
