@@ -108,10 +108,14 @@ header {
 }
 
 .equipe,
-.erro,
 .sobre,
 .licitacao {
     background: var(--bg-1);
+}
+.erro {
+    background: var(--bg-1);
+    padding: 50px;
+
 }
 
 .painel-container {
