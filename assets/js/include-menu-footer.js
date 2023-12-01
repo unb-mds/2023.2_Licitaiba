@@ -1,3 +1,32 @@
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        var loader = document.getElementById('loader');
+        loader.style.display = 'none';
+    }, 1000);
+});
+
+
+const includeHTML = (path, targetElementId) => {
+    return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    document.getElementById(targetElementId).innerHTML = xhr.responseText;
+                    resolve();
+                } else {
+                    reject(new Error(`Erro: ${path}. Status: ${xhr.status}`));
+                }
+            }
+        };
+
+        xhr.open('GET', path, true);
+        xhr.send();
+    });
+};
+
+// INCLUINDO O MENU
 includeHTML('menu.html', 'menu')
     .then(() => {
 
@@ -8,12 +37,8 @@ includeHTML('menu.html', 'menu')
             if (event.key === 'Enter') {
                 event.preventDefault();
                 // FAÇA A BRINCADEIRINHA AQUI ABAIXO
-                url = new URL(window.location.origin)
-                url.pathname = "buscar-licitacao.html"
-                url.searchParams.append("pesquisa", inputBusca.value)
-                window.location = url
-                //var termoPesquisa = inputBusca.value;
-                //window.location.href = 'pesquisar.html?por=' + encodeURIComponent(termoPesquisa);
+                var termoPesquisa = inputBusca.value;
+                window.location.href = 'pesquisar.html?por=' + encodeURIComponent(termoPesquisa);
             }
         });
 
@@ -21,7 +46,6 @@ includeHTML('menu.html', 'menu')
 
         searchButton.addEventListener('click', function() {
             // FAÇA A BRINCADEIRINHA AQUI ABAIXO
-            
             var termoPesquisa = inputBusca.value;
             window.location.href = 'pesquisar.html?por=' + encodeURIComponent(termoPesquisa);
         });
@@ -52,19 +76,3 @@ includeHTML('menu.html', 'menu')
 
 // INCLUINDO O FOOTER
 includeHTML('footer.html', 'footer');
-
-/*
-function buscar(){
-    url = new URL(window.location.origin)
-    url.pathname = "buscar-licitacao.html"
-    url.searchParams.append("pesquisa", busca)
-    window.location = url
-    
-}
-
-
-onkeyup="event.key == 'Enter' ? buscar() : null"
-
-
-
-*/
