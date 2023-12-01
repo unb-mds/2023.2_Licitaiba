@@ -36,18 +36,16 @@ includeHTML('menu.html', 'menu')
         inputBusca.addEventListener('keydown', function(event) {
             if (event.key === 'Enter') {
                 event.preventDefault();
-                // FAÇA A BRINCADEIRINHA AQUI ABAIXO
                 var termoPesquisa = inputBusca.value;
-                window.location.href = 'pesquisar.html?por=' + encodeURIComponent(termoPesquisa);
+                window.location.href = 'buscar-licitacao.html?pesquisa=' + encodeURIComponent(termoPesquisa);
             }
         });
 
         var searchButton = document.getElementById('search-button');
 
         searchButton.addEventListener('click', function() {
-            // FAÇA A BRINCADEIRINHA AQUI ABAIXO
             var termoPesquisa = inputBusca.value;
-            window.location.href = 'pesquisar.html?por=' + encodeURIComponent(termoPesquisa);
+            window.location.href = 'buscar-licitacao.html?pesquisa=' + encodeURIComponent(termoPesquisa);
         });
 
 
