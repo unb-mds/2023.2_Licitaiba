@@ -54,3 +54,15 @@ includeHTML('menu.html', 'menu')
 
 // INCLUINDO O FOOTER
 includeHTML('footer.html', 'footer');
+
+
+function buscar(){
+    let busca = document.getElementById('search-input').value
+    if(busca == ''){
+        return
+    }
+    url = new URL(window.location.origin)
+    url.pathname = "buscar-licitacao.html"
+    url.searchParams.append("pesquisa", busca)
+    window.location = url
+}
