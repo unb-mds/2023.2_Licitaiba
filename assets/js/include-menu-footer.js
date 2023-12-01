@@ -65,4 +65,5 @@ function buscar(){
     url.pathname = "buscar-licitacao.html"
     url.searchParams.append("pesquisa", busca)
     window.location = url
+    
 }
