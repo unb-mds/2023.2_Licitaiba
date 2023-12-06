@@ -1,0 +1,673 @@
+[{
+        "id": "agua_branca",
+        "municipio": "Água Branca"
+    },
+    {
+        "id": "aguiar",
+        "municipio": "Aguiar"
+    },
+    {
+        "id": "alagoa_grande",
+        "municipio": "Alagoa Grande"
+    }, {
+        "id": "alagoa_nova",
+        "municipio": "Alagoa Nova"
+    }, {
+        "id": "alagoinha",
+        "municipio": "Alagoinha"
+    }, {
+        "id": "alcantil",
+        "municipio": "Alcantil"
+    }, {
+        "id": "algodao_de_jandaira",
+        "municipio": "Algodão de Jandaíra"
+    }, {
+        "id": "alhandra",
+        "municipio": "Alhandra"
+    }, {
+        "id": "amparo",
+        "municipio": "Amparo"
+    }, {
+        "id": "aparecida",
+        "municipio": "Aparecida"
+    }, {
+        "id": "aracagi",
+        "municipio": "Araçagi"
+    }, {
+        "id": "arara",
+        "municipio": "Arara"
+    }, {
+        "id": "araruna",
+        "municipio": "Araruna"
+    }, {
+        "id": "areia",
+        "municipio": "Areia"
+    }, {
+        "id": "areia_de_baraunas",
+        "municipio": "Areia de Baraúnas"
+    }, {
+        "id": "areial",
+        "municipio": "Areial"
+    }, {
+        "id": "aroeiras",
+        "municipio": "Aroeiras"
+    }, {
+        "id": "assuncao",
+        "municipio": "Assunção"
+    }, {
+        "id": "baia_da_traicao",
+        "municipio": "Baía da Traição"
+    }, {
+        "id": "bananeiras",
+        "municipio": "Bananeiras"
+    }, {
+        "id": "barauna",
+        "municipio": "Baraúna"
+    }, {
+        "id": "barra_de_santa_rosa",
+        "municipio": "Barra de Santa Rosa"
+    }, {
+        "id": "barra_de_santana",
+        "municipio": "Barra de Santana"
+    }, {
+        "id": "barra_de_sao_miguel",
+        "municipio": "Barra de São Miguel"
+    }, {
+        "id": "bayeux",
+        "municipio": "Bayeux"
+    }, {
+        "id": "belem",
+        "municipio": "Belém"
+    }, {
+        "id": "belem_do_brejo_do_cruz",
+        "municipio": "Belém do Brejo do Cruz"
+    }, {
+        "id": "bernardino_batista",
+        "municipio": "Bernardino Batista"
+    }, {
+        "id": "boa_ventura",
+        "municipio": "Boa Ventura"
+    }, {
+        "id": "boa_vista",
+        "municipio": "Boa Vista"
+    }, {
+        "id": "bom_jesus",
+        "municipio": "Bom Jesus"
+    }, {
+        "id": "bom_sucesso",
+        "municipio": "Bom Sucesso"
+    }, {
+        "id": "bonito_de_santa_fe",
+        "municipio": "Bonito de Santa Fé"
+    }, {
+        "id": "boqueirao",
+        "municipio": "Boqueirão"
+    }, {
+        "id": "borborema",
+        "municipio": "Borborema"
+    }, {
+        "id": "brejo_do_cruz",
+        "municipio": "Brejo do Cruz"
+    }, {
+        "id": "brejo_dos_santos",
+        "municipio": "Brejo dos Santos"
+    }, {
+        "id": "caapora",
+        "municipio": "Caaporã"
+    }, {
+        "id": "cabaceiras",
+        "municipio": "Cabaceiras"
+    }, {
+        "id": "cabedelo",
+        "municipio": "Cabedelo"
+    }, {
+        "id": "cachoeira_dos_indios",
+        "municipio": "Cachoeira dos Índios"
+    }, {
+        "id": "cacimba_de_areia",
+        "municipio": "Cacimba de Areia"
+    }, {
+        "id": "cacimba_de_dentro",
+        "municipio": "Cacimba de Dentro"
+    }, {
+        "id": "cacimbas",
+        "municipio": "Cacimbas"
+    }, {
+        "id": "caicara",
+        "municipio": "Caiçara"
+    }, {
+        "id": "cajazeiras",
+        "municipio": "Cajazeiras"
+    }, {
+        "id": "cajazeirinhas",
+        "municipio": "Cajazeirinhas"
+    }, {
+        "id": "caldas_brandao",
+        "municipio": "Caldas Brandão"
+    }, {
+        "id": "camalau",
+        "municipio": "Camalaú"
+    }, {
+        "id": "campina_grande",
+        "municipio": "Campina Grande"
+    }, {
+        "id": "capim",
+        "municipio": "Capim"
+    }, {
+        "id": "caraubas",
+        "municipio": "Caraúbas"
+    }, {
+        "id": "carrapateira",
+        "municipio": "Carrapateira"
+    }, {
+        "id": "casserengue",
+        "municipio": "Casserengue"
+    }, {
+        "id": "catingueira",
+        "municipio": "Catingueira"
+    }, {
+        "id": "catole_do_rocha",
+        "municipio": "Catolé do Rocha"
+    }, {
+        "id": "caturite",
+        "municipio": "Caturité"
+    }, {
+        "id": "conceicao",
+        "municipio": "Conceição"
+    }, {
+        "id": "condado",
+        "municipio": "Condado"
+    }, {
+        "id": "conde",
+        "municipio": "Conde"
+    }, {
+        "id": "congo",
+        "municipio": "Congo"
+    }, {
+        "id": "coremas",
+        "municipio": "Coremas"
+    }, {
+        "id": "coxixola",
+        "municipio": "Coxixola"
+    }, {
+        "id": "cruz_do_espirito_santo",
+        "municipio": "Cruz do Espírito Santo"
+    }, {
+        "id": "cubati",
+        "municipio": "Cubati"
+    }, {
+        "id": "cuite",
+        "municipio": "Cuité"
+    }, {
+        "id": "cuite_de_mamanguape",
+        "municipio": "Cuité de Mamanguape"
+    }, {
+        "id": "cuitegi",
+        "municipio": "Cuitegi"
+    }, {
+        "id": "curral_de_cima",
+        "municipio": "Curral de Cima"
+    }, {
+        "id": "curral_velho",
+        "municipio": "Curral Velho"
+    }, {
+        "id": "damiao",
+        "municipio": "Damião"
+    }, {
+        "id": "desterro",
+        "municipio": "Desterro"
+    }, {
+        "id": "diamante",
+        "municipio": "Diamante"
+    }, {
+        "id": "dona_ines",
+        "municipio": "Dona Inês"
+    }, {
+        "id": "duas_estradas",
+        "municipio": "Duas Estradas"
+    }, {
+        "id": "emas",
+        "municipio": "Emas"
+    }, {
+        "id": "esperanca",
+        "municipio": "Esperança"
+    }, {
+        "id": "fagundes",
+        "municipio": "Fagundes"
+    }, {
+        "id": "frei_martinho",
+        "municipio": "Frei Martinho"
+    }, {
+        "id": "gado_bravo",
+        "municipio": "Gado Bravo"
+    }, {
+        "id": "guarabira",
+        "municipio": "Guarabira"
+    }, {
+        "id": "gurinhem",
+        "municipio": "Gurinhém"
+    }, {
+        "id": "gurjao",
+        "municipio": "Gurjão"
+    }, {
+        "id": "ibiara",
+        "municipio": "Ibiara"
+    }, {
+        "id": "igaracy",
+        "municipio": "Igaracy"
+    }, {
+        "id": "imaculada",
+        "municipio": "Imaculada"
+    }, {
+        "id": "inga",
+        "municipio": "Ingá"
+    }, {
+        "id": "itabaiana",
+        "municipio": "Itabaiana"
+    }, {
+        "id": "itaporanga",
+        "municipio": "Itaporanga"
+    }, {
+        "id": "itapororoca",
+        "municipio": "Itapororoca"
+    }, {
+        "id": "itatuba",
+        "municipio": "Itatuba"
+    }, {
+        "id": "jacarau",
+        "municipio": "Jacaraú"
+    }, {
+        "id": "jerico",
+        "municipio": "Jericó"
+    }, {
+        "id": "joao_pessoa",
+        "municipio": "João Pessoa"
+    }, {
+        "id": "joca_claudino",
+        "municipio": "Joca Claudino"
+    }, {
+        "id": "juarez_tavora",
+        "municipio": "Juarez Távora"
+    }, {
+        "id": "juazeirinho",
+        "municipio": "Juazeirinho"
+    }, {
+        "id": "junco_do_serido",
+        "municipio": "Junco do Seridó"
+    }, {
+        "id": "juripiranga",
+        "municipio": "Juripiranga"
+    }, {
+        "id": "juru",
+        "municipio": "Juru"
+    }, {
+        "id": "lagoa",
+        "municipio": "Lagoa"
+    }, {
+        "id": "lagoa_de_dentro",
+        "municipio": "Lagoa de Dentro"
+    }, {
+        "id": "lagoa_seca",
+        "municipio": "Lagoa Seca"
+    }, {
+        "id": "lastro",
+        "municipio": "Lastro"
+    }, {
+        "id": "livramento",
+        "municipio": "Livramento"
+    }, {
+        "id": "logradouro",
+        "municipio": "Logradouro"
+    }, {
+        "id": "lucena",
+        "municipio": "Lucena"
+    }, {
+        "id": "mae_d_agua",
+        "municipio": "Mãe d 'Água"
+    }, {
+        "id": "malta",
+        "municipio": "Malta"
+    }, {
+        "id": "mamanguape",
+        "municipio": "Mamanguape"
+    }, {
+        "id": "manaira",
+        "municipio": "Manaíra"
+    }, {
+        "id": "marcacao",
+        "municipio": "Marcação"
+    }, {
+        "id": "mari",
+        "municipio": "Mari"
+    }, {
+        "id": "marizopolis",
+        "municipio": "Marizópolis"
+    }, {
+        "id": "massaranduba",
+        "municipio": "Massaranduba"
+    }, {
+        "id": "mataraca",
+        "municipio": "Mataraca"
+    }, {
+        "id": "matinhas",
+        "municipio": "Matinhas"
+    }, {
+        "id": "mato_grosso",
+        "municipio": "Mato Grosso"
+    }, {
+        "id": "matureia",
+        "municipio": "Maturéia"
+    }, {
+        "id": "mogeiro",
+        "municipio": "Mogeiro"
+    }, {
+        "id": "montadas",
+        "municipio": "Montadas"
+    }, {
+        "id": "monte_horebe",
+        "municipio": "Monte Horebe"
+    }, {
+        "id": "monteiro",
+        "municipio": "Monteiro"
+    }, {
+        "id": "mulungu",
+        "municipio": "Mulungu"
+    }, {
+        "id": "natuba",
+        "municipio": "Natuba"
+    }, {
+        "id": "nazarezinho",
+        "municipio": "Nazarezinho"
+    }, {
+        "id": "nova_floresta",
+        "municipio": "Nova Floresta"
+    }, {
+        "id": "nova_olinda",
+        "municipio": "Nova Olinda"
+    }, {
+        "id": "nova_palmeira",
+        "municipio": "Nova Palmeira"
+    }, {
+        "id": "olho_d_agua",
+        "municipio": "Olho d 'Água"
+    }, {
+        "id": "olivedos",
+        "municipio": "Olivedos"
+    }, {
+        "id": "ouro_velho",
+        "municipio": "Ouro Velho"
+    }, {
+        "id": "parari",
+        "municipio": "Parari"
+    }, {
+        "id": "passagem",
+        "municipio": "Passagem"
+    }, {
+        "id": "patos",
+        "municipio": "Patos"
+    }, {
+        "id": "paulista",
+        "municipio": "Paulista"
+    }, {
+        "id": "pedra_branca",
+        "municipio": "Pedra Branca"
+    }, {
+        "id": "pedra_lavrada",
+        "municipio": "Pedra Lavrada"
+    }, {
+        "id": "pedras_de_fogo",
+        "municipio": "Pedras de Fogo"
+    }, {
+        "id": "pedro_regis",
+        "municipio": "Pedro Régis"
+    }, {
+        "id": "pianco",
+        "municipio": "Piancó"
+    }, {
+        "id": "picui",
+        "municipio": "Picuí"
+    }, {
+        "id": "pilar",
+        "municipio": "Pilar"
+    }, {
+        "id": "piloes",
+        "municipio": "Pilões"
+    }, {
+        "id": "piloezinhos",
+        "municipio": "Pilõezinhos"
+    }, {
+        "id": "pirpirituba",
+        "municipio": "Pirpirituba"
+    }, {
+        "id": "pitimbu",
+        "municipio": "Pitimbu"
+    }, {
+        "id": "pocinhos",
+        "municipio": "Pocinhos"
+    }, {
+        "id": "poco_dantas",
+        "municipio": "Poço Dantas"
+    }, {
+        "id": "poco_de_jose_de_moura",
+        "municipio": "Poço de José de Moura"
+    }, {
+        "id": "pombal",
+        "municipio": "Pombal"
+    }, {
+        "id": "prata",
+        "municipio": "Prata"
+    }, {
+        "id": "princesa_isabel",
+        "municipio": "Princesa Isabel"
+    }, {
+        "id": "puxinana",
+        "municipio": "Puxinanã"
+    }, {
+        "id": "queimadas",
+        "municipio": "Queimadas"
+    }, {
+        "id": "quixaba",
+        "municipio": "Quixabá"
+    }, {
+        "id": "remigio",
+        "municipio": "Remígio"
+    }, {
+        "id": "riachao",
+        "municipio": "Riachão"
+    }, {
+        "id": "riachao_do_bacamarte",
+        "municipio": "Riachão do Bacamarte"
+    }, {
+        "id": "riachao_do_poco",
+        "municipio": "Riachão do Poço"
+    }, {
+        "id": "riacho_de_santo_antonio",
+        "municipio": "Riacho de Santo Antônio"
+    }, {
+        "id": "riacho_dos_cavalos",
+        "municipio": "Riacho dos Cavalos"
+    }, {
+        "id": "rio_tinto",
+        "municipio": "Rio Tinto"
+    }, {
+        "id": "salgadinho",
+        "municipio": "Salgadinho"
+    }, {
+        "id": "salgado_de_sao_felix",
+        "municipio": "Salgado de São Félix"
+    }, {
+        "id": "santa_cecilia",
+        "municipio": "Santa Cecília"
+    }, {
+        "id": "santa_cruz",
+        "municipio": "Santa Cruz"
+    }, {
+        "id": "santa_helena",
+        "municipio": "Santa Helena"
+    }, {
+        "id": "santa_ines",
+        "municipio": "Santa Inês"
+    }, {
+        "id": "santa_luzia",
+        "municipio": "Santa Luzia"
+    }, {
+        "id": "santa_rita",
+        "municipio": "Santa Rita"
+    }, {
+        "id": "santa_teresinha",
+        "municipio": "Santa Terezinha"
+    }, {
+        "id": "santana_de_mangueira",
+        "municipio": "Santana de Mangueira"
+    }, {
+        "id": "santana_dos_garrotes",
+        "municipio": "Santana dos Garrotes"
+    }, {
+        "id": "santo_andre",
+        "municipio": "Santo André"
+    }, {
+        "id": "sao_bentinho",
+        "municipio": "São Bentinho"
+    }, {
+        "id": "sao_bento",
+        "municipio": "São Bento"
+    }, {
+        "id": "sao_domingos",
+        "municipio": "São Domingos"
+    }, {
+        "id": "sao_domingos_do_cariri",
+        "municipio": "São Domingos do Cariri"
+    }, {
+        "id": "sao_francisco",
+        "municipio": "São Francisco"
+    }, {
+        "id": "sao_joao_do_cariri",
+        "municipio": "São João do Cariri"
+    }, {
+        "id": "sao_joao_do_rio_do_peixe",
+        "municipio": "São João do Rio do Peixe"
+    }, {
+        "id": "sao_joao_do_tigre",
+        "municipio": "São João do Tigre"
+    }, {
+        "id": "sao_jose_da_lagoa_tapada",
+        "municipio": "São José da Lagoa Tapada"
+    }, {
+        "id": "sao_jose_de_caiana",
+        "municipio": "São José de Caiana"
+    }, {
+        "id": "sao_jose_de_espinharas",
+        "municipio": "São José de Espinharas"
+    }, {
+        "id": "sao_jose_de_piranhas",
+        "municipio": "São José de Piranhas"
+    }, {
+        "id": "sao_jose_de_princesa",
+        "municipio": "São José de Princesa"
+    }, {
+        "id": "sao_jose_do_bonfim",
+        "municipio": "São José do Bonfim"
+    }, {
+        "id": "sao_jose_do_brejo_do_cruz",
+        "municipio": "São José do Brejo do Cruz"
+    }, {
+        "id": "sao_jose_do_sabugi",
+        "municipio": "São José do Sabugi"
+    }, {
+        "id": "sao_jose_dos_cordeiros ",
+        "municipio": "São José dos Cordeiros"
+    }, {
+        "id": "sao_jose_dos_ramos",
+        "municipio": "São José dos Ramos"
+    }, {
+        "id": "sao_mamede",
+        "municipio": "São Mamede"
+    }, {
+        "id": "sao_miguel_de_taipu",
+        "municipio": "São Miguel de Taipu"
+    }, {
+        "id": "sao_sebastiao_de_lagoa_de_roca",
+        "municipio": "São Sebastião de Lagoa de Roça"
+    }, {
+        "id": "sao_sebastiao_do_umbuzeiro",
+        "municipio": "São Sebastião do Umbuzeiro"
+    }, {
+        "id": "sao_vicente_do_serido",
+        "municipio": "São Vicente do Seridó"
+    }, {
+        "id": "sape",
+        "municipio": "Sapé"
+    }, {
+        "id": "serra_branca",
+        "municipio": "Serra Branca"
+    }, {
+        "id": "serra_da_raiz",
+        "municipio": "Serra da Raiz"
+    }, {
+        "id": "serra_grande",
+        "municipio": "Serra Grande"
+    }, {
+        "id": "serra_redonda",
+        "municipio": "Serra Redonda"
+    }, {
+        "id": "serraria",
+        "municipio": "Serraria"
+    }, {
+        "id": "sertaozinho",
+        "municipio": "Sertãozinho"
+    }, {
+        "id": "sobrado",
+        "municipio": "Sobrado"
+    }, {
+        "id": "solanea",
+        "municipio": "Solânea"
+    }, {
+        "id": "soledade",
+        "municipio": "Soledade"
+    }, {
+        "id": "sossego",
+        "municipio": "Sossêgo"
+    }, {
+        "id": "sousa",
+        "municipio": "Sousa"
+    }, {
+        "id": "sume",
+        "municipio": "Sumé"
+    }, {
+        "id": "tacima",
+        "municipio": "Tacima"
+    }, {
+        "id": "taperoa",
+        "municipio": "Taperoá"
+    }, {
+        "id": "tavares",
+        "municipio": "Tavares"
+    }, {
+        "id": "teixeira",
+        "municipio": "Teixeira"
+    }, {
+        "id": "tenorio",
+        "municipio": "Tenório"
+    }, {
+        "id": "triunfo",
+        "municipio": "Triunfu"
+    }, {
+        "id": "uirauna",
+        "municipio": "Uiraúna"
+    }, {
+        "id": "umbuzeiro",
+        "municipio": "Umbuzeiro"
+    }, {
+        "id": "varzea",
+        "municipio": "Várzea"
+    }, {
+        "id": "vieiropolis",
+        "municipio": "Vieirópolis"
+    }, {
+        "id": "vista_serrana",
+        "municipio": "Vista Serrana"
+    }, {
+        "id": "zabele",
+        "municipio": "Zabelê"
+    }
+]

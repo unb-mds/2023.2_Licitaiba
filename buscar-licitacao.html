@@ -44,7 +44,7 @@
     <section class="licitacao">
         <form method="GET" class="form-inline" style="display:block; padding-top:50px;">
             <div class="search-container-licitacao">
-                <input style="color: var(--txt-body)!important;" class="search-pg-licitacao form-control mr-sm-2 search-input search-licitacao" type="text" placeholder="Buscar Licitação" id="pesquisar-por" name="pesquisar-por" aria-label="">
+                <input style="color: var(--txt-body)!important;" class="search-pg-licitacao form-control mr-sm-2 search-input search-licitacao" type="text" placeholder="Buscar Licitação" id="pesquisar_por" name="pesquisar_por" aria-label="">
                 <button id="search-button-licitacao" class="btn btn-outline-success my-2 my-sm-0" type="submit">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
@@ -55,9 +55,9 @@
                     <div style="margin: auto;" class="col-8">
                         <div class="form-row">
                             <div class="col">
-                                <label for="filtro-municipio">Municipio:</label>
-                                <select class="form-control" id="filtro-municipio" name="filtro-municipio">
-                                    <option value="">Selecione...</option>
+                                <label for="filtro_municipio">Municipio:</label>
+                                <select class="form-control" id="filtro_municipio" name="filtro_municipio" onchange="atualizarDados()">
+                                    <option value="todos">Selecione...</option>
                                     <option value="agua_branca">Água Branca</option>
                                     <option value="aguiar">Aguiar</option>
                                     <option value="alagoa_grande">Alagoa Grande</option>
@@ -284,18 +284,15 @@
                                 </select>
                             </div>
                             <div class="col" style="min-width: 180px;">
-                                <label for="filtro-data">Data:</label>
+                                <label for="filtro_data">Data:</label>
                                 <div class="input-group">
-                                    <input type="date" class="form-control" id="filtro-data" name="filtro-data" placeholder="Data">
+                                    <input type="date" class="form-control" id="filtro_data" name="filtro_data" placeholder="Data">
                                 </div>
                             </div>
                             <div class="col">
-                                <label for="filtro-valor">Valor máximo:</label>
-                                <div class="input-group">
-                                    <input type="number" class="form-control" id="filtro-valor" name="filtro-valor" placeholder="Digite o valor máximo">
-                                    <div class="input-group-append">
-                                        <button class="btn-3" type="submit" style="margin-left: 10px;padding: 0px 10px;">Filtrar</button>
-                                    </div>
+                                <div class="input-group-append">
+                                    <button class="btn-3" type="submit" style="    padding: 5px 10px;
+                                    margin-top: 24px;" onclick="municipioSelecionado(filtro_municipio)">Filtrar licitações</button>
                                 </div>
                             </div>
                         </div>
@@ -312,7 +309,25 @@
                 </div>
             </div>
         </div>
-        <br><br>
+
+
+
+        <div class="graficos" style="margin-top: 50px;">
+            <h3 id="titulo_grafico" class="subtopico" style="font-size: 25px; margin-left: 0px;text-align: center;">
+                Total de licitações extraídas da Paraíba. <br> <span style="font-size: 20px;">Selecione um município acima para ver a quantidade de licitações extraídas separadamente.</span>
+            </h3>
+
+            <div id="grafico_ano_div" style="margin: auto; text-align: center;">
+                <label for="grafico_ano" style="color: var(--txt-body);">Ano:</label>
+                <select style="width: 100px; margin: auto; display: inline;" class="form-control" id="grafico_ano" name="grafico_ano" onchange="atualizarDados()">
+                    <option value="2024" disabled>2024</option>
+                    <option value="2023">2023</option>
+                    
+                </select>
+            </div>
+            <div id="grafico">
+            </div>
+        </div>
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -336,9 +351,23 @@
 
     </section>
     <div id="footer"></div>
-
 </body>
+
+<script>
+    function atualizarDados() {
+        var municipioSelecionado = document.getElementById("filtro_municipio").value;
+        var anoSelecionado = document.getElementById("grafico_ano").value;
+        anoSelecionado = parseInt(anoSelecionado);
+
+        console.log(anoSelecionado, municipioSelecionado, typeof anoSelecionado)
+        carregarDadosGrafico(municipioSelecionado, anoSelecionado);
+
+    }
+</script>
+
 <script src="assets/js/include-menu-footer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="assets/js/graficos.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
