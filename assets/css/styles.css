@@ -69,6 +69,7 @@ header {
     text-align: left;
     margin-left: 10%;
     font-family: 'Poppins';
+    color: var(--txt-body);
 }
 
 .home {
@@ -185,13 +186,15 @@ header {
 
 .search-input,
 .search-input:focus,
-#filtro-municipio,
-#filtro-municipio:focus,
-#filtro-data,
-#filtro-data:focus,
-#filtro-valor,
-#filtro-valor:focus,
-#filtro-valor::placeholder {
+#filtro_municipio,
+#filtro_municipio:focus,
+#grafico_ano,
+#grafico_anp:focus,
+#filtro_data,
+#filtro_data:focus,
+#filtro_valor,
+#filtro_valor:focus,
+#filtro_valor::placeholder {
     color: #333!important;
 }
 
@@ -609,4 +612,15 @@ footer {
 
 a {
     color: var(--azul-1)!important;
+}
+
+
+/*GRAFICOS*/
+
+.graficos {
+    width: 80%;
+    border-radius: 20px;
+    margin: 40px auto 0 auto;
+    padding: 10px;
+    color: #0136af!important;
 }
