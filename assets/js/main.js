@@ -4,10 +4,18 @@ let url = "https://raw.githubusercontent.com/unb-mds/2023-2-Squad04/main/src/dad
 var licitacoes = []
 
 
+var urlParams = new URLSearchParams(window.location.search);
+var valorPesquisa = urlParams.get('pesquisar_por');
 
-function barra_busca() {
-    return (window.location.searchParams('pesquisa') != null) ? `placeholder="${window.location.searchParams('pesquisa')}` : 'placeholder="Buscar Licitação"'
+if (valorPesquisa) {
+    var filtroMunicipio = urlParams.get('filtro_municipio');
+    var filtroData = urlParams.get('filtro_data');
+    console.log(valorPesquisa, filtroMunicipio, filtroData)
 }
+
+// function barra_busca() {
+//     return (window.location.searchParams('pesquisar_por') != null) ? `placeholder="${window.location.searchParams('pesquisar_por')}` : 'placeholder="Buscar Licitação"'
+// }
 
 
 
@@ -27,7 +35,7 @@ function buscar_licitacoes() {
 
             // BUSCA EM SI
             var link = new URL(window.location)
-            var pesquisa = link.searchParams.get('pesquisa')
+            var pesquisa = link.searchParams.get('pesquisar_por')
             console.log("pesquisa: " + pesquisa)
             window.alert("aha")
             print("<h1>boooyaaaa!!!</h1>")

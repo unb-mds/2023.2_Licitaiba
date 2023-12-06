@@ -37,7 +37,7 @@ includeHTML('menu.html', 'menu')
             if (event.key === 'Enter') {
                 event.preventDefault();
                 var termoPesquisa = inputBusca.value;
-                window.location.href = 'buscar-licitacao.html?pesquisa=' + encodeURIComponent(termoPesquisa);
+                window.location.href = 'buscar-licitacao.html?pesquisar_por=' + encodeURIComponent(termoPesquisa);
             }
         });
 
@@ -45,7 +45,7 @@ includeHTML('menu.html', 'menu')
 
         searchButton.addEventListener('click', function() {
             var termoPesquisa = inputBusca.value;
-            window.location.href = 'buscar-licitacao.html?pesquisa=' + encodeURIComponent(termoPesquisa);
+            window.location.href = 'buscar-licitacao.html?pesquisar_por=' + encodeURIComponent(termoPesquisa);
         });
 
 
