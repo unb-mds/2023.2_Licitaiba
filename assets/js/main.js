@@ -5,7 +5,7 @@ var licitacoes = []
 
 
 
-function barra_busca(){
+function barra_busca() {
     return (window.location.searchParams('pesquisa') != null) ? `placeholder="${window.location.searchParams('pesquisa')}` : 'placeholder="Buscar Licitação"'
 }
 
@@ -13,7 +13,7 @@ function barra_busca(){
 
 
 
-function buscar_licitacoes(){
+function buscar_licitacoes() {
 
     const temp = fetch(url)
         .then(res => res.json())
@@ -23,22 +23,19 @@ function buscar_licitacoes(){
     const mostrar_licitacoes = () => {
         temp.then((a) => {
             licitacoes = a;
-            
-            
+
+
             // BUSCA EM SI
             var link = new URL(window.location)
             var pesquisa = link.searchParams.get('pesquisa')
             console.log("pesquisa: " + pesquisa)
-            //window.alert("aha")
-            //print("<h1>boooyaaaa!!!</h1>")
+            window.alert("aha")
+            print("<h1>boooyaaaa!!!</h1>")
 
 
 
-          });
-        };
-    
+        });
+    };
+
     mostrar_licitacoes()
 }
-
-
-
