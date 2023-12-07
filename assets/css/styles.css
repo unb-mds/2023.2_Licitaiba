@@ -19,8 +19,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap');
  :root {
     --txt-body: #1a1a1a;
-    --bg-1: #ffffff;
-    --bg-2: #e0e0e0;
+    --bg-1: #f0f0f0;
+    --bg-2: #e7e7e7;
+    --bg-3: #e0e0e0;
     --azul-1: #22abfa;
     --azul-2: #0136af;
     --header: #1a1a1a;
@@ -30,6 +31,7 @@
     --txt-body: #fff;
     --bg-1: #222222;
     --bg-2: #2b2b2b;
+    --bg-3: #333333;
     --azul-1: #22abfa;
     --azul-2: #0136af;
     --header: #0136af;
@@ -181,7 +183,7 @@ header {
 
 .form-control {
     border-radius: 15px!important;
-    border: 1px solid var(--txt-body)!important;
+    border: 1px solid var(--bg-3)!important;
 }
 
 .search-input,
@@ -195,7 +197,8 @@ header {
 #filtro_valor,
 #filtro_valor:focus,
 #filtro_valor::placeholder {
-    color: #333!important;
+    background: var(--bg-2);
+    color: var(--txt-body)!important;
 }
 
 .search-input::placeholder {
@@ -243,6 +246,10 @@ input[type="search"]::-webkit-search-clear-button {
 
 input::placeholder {
     color: #ccc!important;
+}
+
+option {
+    color: var(--txt-body);
 }
 
 
@@ -296,7 +303,7 @@ input {
     width: 150px;
     padding: 5px;
     border-radius: 15px;
-    border: 1px solid var(--txt-body);
+    border: 1px solid var(--bg-3);
 }
 
 .form-control:focus {
@@ -604,7 +611,6 @@ footer {
 /*PAGINA DE LICITAÇÃO*/
 
 .resultados {
-    border: 1px solid var(--txt-body);
     width: 70%;
     border-radius: 30px;
     margin: auto;
@@ -626,6 +632,12 @@ a {
 }
 
 .result-container {
-    padding: 30px 0;
-    border-bottom: solid var(--txt-body) 1px;
+    padding: 15px 15px;
+    margin-top: 20px;
+    background: var(--bg-2);
+    border: 1px solid var(--bg-3);
+    box-shadow: 5px 5px var(--bg-3);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
