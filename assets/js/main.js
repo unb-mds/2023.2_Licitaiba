@@ -44,10 +44,10 @@ function buscar_licitacoes() {
 
             // BUSCA EM SI
             var link = new URL(window.location)
-            var pesquisa = link.searchParams.get('pesquisar_por')
+            var valorPesquisa = link.searchParams.get('pesquisar_por')
             for(let licitacao in licitacoes){
                 console.log(licitacoes[licitacao]['Texto_encontrado'])
-                if(licitacoes[licitacao]['Texto_encontrado'].search(/pesquisa/i) != -1){
+                if(licitacoes[licitacao]['Texto_encontrado'].search(valorPesquisa) > -1){
                     lista_licitacoes.push(licitacoes[licitacao])
                     console.log("teste " + licitacoes[licitacao]['Texto_encontrado'])
                 }
@@ -61,7 +61,7 @@ function buscar_licitacoes() {
                     </div>
                 `);
 
-            }         
+            } 
 
 
         });
