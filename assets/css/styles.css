@@ -605,7 +605,7 @@ footer {
 
 .resultados {
     border: 1px solid var(--txt-body);
-    width: 60%;
+    width: 70%;
     border-radius: 30px;
     margin: auto;
 }
@@ -623,4 +623,9 @@ a {
     margin: 40px auto 0 auto;
     padding: 10px;
     color: #0136af!important;
+}
+
+.result-container {
+    padding: 30px 0;
+    border-bottom: solid var(--txt-body) 1px;
 }
