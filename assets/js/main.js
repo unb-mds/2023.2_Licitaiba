@@ -57,12 +57,12 @@ function buscar_licitacoes() {
             console.log[lista_licitacoes]
             var resultados = document.getElementById("resultados")
 
-            resultados.innerHTML = `<h3 class="subtopico" style="font-size: 25px; margin:auto; text-align: center;">Aqui está o que encontrei. 👇</h3>`
+            resultados.innerHTML = `<h3 class="subtopico" style="font-size: 30px; margin:auto; text-align: center;">Resultados</h3>`
 
             for (let licitacao in lista_licitacoes) {
                 resultados.innerHTML += (`<div class="result-container d-flex justify-content-between align-items-center">
-                        <p class="mb-0">${lista_licitacoes[licitacao]['Texto_encontrado'].slice(0,230)}...</p>
-                        <a href="#" onclick="mostrarResultados(listaResultados, i)" class="details-link" data-toggle="modal" data-target="#myModal">Mais Detalhes</a>
+                        <p class="mb-0">${lista_licitacoes[licitacao]['Texto_encontrado'].slice(0,230)}... <a href="#" onclick="mostrarResultados(listaResultados, i)" class="details-link" data-toggle="modal" data-target="#myModal">Mais detalhes</a></p>
+                        
                     </div>
                 `);
 
