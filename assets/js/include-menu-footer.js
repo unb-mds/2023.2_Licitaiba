@@ -26,9 +26,29 @@ const includeHTML = (path, targetElementId) => {
     });
 };
 
-//INCLUI O MENU
+// INCLUINDO O MENU
 includeHTML('menu.html', 'menu')
     .then(() => {
+
+
+        var inputBusca = document.getElementById('search-input');
+
+        inputBusca.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                var termoPesquisa = inputBusca.value;
+                window.location.href = 'buscar-licitacao.html?pesquisar_por=' + encodeURIComponent(termoPesquisa);
+            }
+        });
+
+        var searchButton = document.getElementById('search-button');
+
+        searchButton.addEventListener('click', function() {
+            var termoPesquisa = inputBusca.value;
+            window.location.href = 'buscar-licitacao.html?pesquisar_por=' + encodeURIComponent(termoPesquisa);
+        });
+
+
         // TROCANDO ENTRE MODO ESCURO E MODO CLARO //
         const colorToggleBtn = document.getElementById('color-toggle');
         let isLightMode = localStorage.getItem('isLightMode') === 'true';
