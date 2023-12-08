@@ -118,3 +118,11 @@ function atualizarGrafico(dados, municipioSelecionado, ano) {
 }
 
 carregarDadosGrafico("Todos", 2023);
+
+var urlParams = new URLSearchParams(window.location.search);
+var valorPesquisa = urlParams.get('pesquisar_por');
+
+if (valorPesquisa) {
+    var filtroMunicipio = urlParams.get('filtro_municipio');
+    carregarDadosGrafico(filtroMunicipio, 2023)
+}
