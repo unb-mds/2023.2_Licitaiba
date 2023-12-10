@@ -41,15 +41,14 @@ function buscar_licitacoes() {
     const mostrar_licitacoes = () => {
         temp.then((a) => {
             licitacoes = a;
-            //console.log(licitacoes)
             var lista_licitacoes = []
-            window.alert("amongus")
+            
             // BUSCA EM SI
             var link = new URL(window.location)
             var valorPesquisa = link.searchParams.get('pesquisar_por')
-            var limite = 10
+            var limite = 100
             for (let licitacao in licitacoes) {
-                limite -= 1
+                limite--
                 if(limite <= 0){
                     break
                 }
