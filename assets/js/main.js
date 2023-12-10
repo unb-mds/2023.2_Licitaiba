@@ -10,7 +10,7 @@ var valorPesquisa = urlParams.get('pesquisar_por');
 if (valorPesquisa) {
     var filtroMunicipio = urlParams.get('filtro_municipio');
     var filtroData = urlParams.get('filtro_data');
-    console.log(valorPesquisa, filtroMunicipio, filtroData)
+    //console.log(valorPesquisa, filtroMunicipio, filtroData)
     var tagFiltroMunicipio = document.getElementById("filtro_municipio")
     tagFiltroMunicipio.value = filtroMunicipio
 
@@ -41,20 +41,25 @@ function buscar_licitacoes() {
     const mostrar_licitacoes = () => {
         temp.then((a) => {
             licitacoes = a;
-            console.log(licitacoes)
+            //console.log(licitacoes)
             var lista_licitacoes = []
-
+            window.alert("amongus")
             // BUSCA EM SI
             var link = new URL(window.location)
             var valorPesquisa = link.searchParams.get('pesquisar_por')
+            var limite = 10
             for (let licitacao in licitacoes) {
-                console.log(licitacoes[licitacao]['Texto_encontrado'])
+                limite -= 1
+                if(limite <= 0){
+                    break
+                }
+                //console.log(licitacoes[licitacao]['Texto_encontrado'])
                 if (licitacoes[licitacao]['Texto_encontrado'].search(valorPesquisa) > -1) {
                     lista_licitacoes.push(licitacoes[licitacao])
-                    console.log("teste " + licitacoes[licitacao]['Texto_encontrado'])
+                        //console.log("teste " + licitacoes[licitacao]['Texto_encontrado'])
                 }
             }
-            console.log[lista_licitacoes]
+            //console.log[lista_licitacoes]
             var resultados = document.getElementById("resultados")
 
             resultados.innerHTML = `<h3 class="subtopico" style="font-size: 30px; margin:auto; text-align: center;">Resultados</h3>`
