@@ -1,8 +1,5 @@
 let url = "https://raw.githubusercontent.com/unb-mds/2023-2-Squad04/main/src/dados/data.json"
-
-
 var licitacoes = []
-
 
 var urlParams = new URLSearchParams(window.location.search);
 var valorPesquisa = urlParams.get('pesquisar_por');
@@ -23,13 +20,6 @@ if (valorPesquisa) {
     buscar_licitacoes()
 }
 
-// function barra_busca() {
-//     return (window.location.searchParams('pesquisar_por') != null) ? `placeholder="${window.location.searchParams('pesquisar_por')}` : 'placeholder="Buscar Licitação"'
-// }
-
-
-
-
 
 function buscar_licitacoes() {
 
@@ -43,6 +33,7 @@ function buscar_licitacoes() {
             licitacoes = a;
             var lista_licitacoes = []
             
+            //window.alert("teste " + municipios)
             // BUSCA EM SI
             var link = new URL(window.location)
             var valorPesquisa = link.searchParams.get('pesquisar_por')
@@ -53,9 +44,13 @@ function buscar_licitacoes() {
                     break
                 }
                 //console.log(licitacoes[licitacao]['Texto_encontrado'])
+                
                 if (licitacoes[licitacao]['Texto_encontrado'].search(valorPesquisa) > -1) {
-                    lista_licitacoes.push(licitacoes[licitacao])
-                        //console.log("teste " + licitacoes[licitacao]['Texto_encontrado'])
+                    if (licitacoes[licitacao]['Data'] == filtroData || filtroData == ''){
+                        if (licitacoes[licitacao]['Municipio'].toLowerCase().replaceAll(" ", "_").replaceAll(/[àáãâ]/g, 'a').replaceAll(/[èéêẽ]/g, 'e').replaceAll(/[íìîĩ]/g, 'i').replaceAll(/[òóõô]/g, 'o').replaceAll(/[úùũû]/g, 'u').replaceAll(/[ç]/g, 'c') == filtroMunicipio || filtroMunicipio == ''){
+                            lista_licitacoes.push(licitacoes[licitacao])
+                        }
+                    }
                 }
             }
             //console.log[lista_licitacoes]
