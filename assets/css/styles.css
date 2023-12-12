@@ -578,6 +578,9 @@ footer {
     .nav-item {
         padding: 5px;
     }
+    .resultados {
+        width: 90%!important;
+    }
 }
 
 .btn:focus,
