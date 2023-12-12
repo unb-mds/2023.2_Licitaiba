@@ -31,12 +31,17 @@ function buscar_licitacoes() {
     const mostrar_licitacoes = () => {
         temp.then((a) => {
             licitacoes = a;
+<<<<<<< HEAD
+=======
+            //console.log(licitacoes)
+>>>>>>> e1f1660b16c51da92a84b400d2c25793c5f7db4c
             var lista_licitacoes = []
             
             // BUSCA EM SI
 
             var limite = 100
             for (let licitacao in licitacoes) {
+<<<<<<< HEAD
                 limite--
                 if(limite <= 0){
                     break
@@ -51,6 +56,15 @@ function buscar_licitacoes() {
                 }
             }
             
+=======
+                //console.log(licitacoes[licitacao]['Texto_encontrado'])
+                if (licitacoes[licitacao]['Texto_encontrado'].search(valorPesquisa) > -1) {
+                    lista_licitacoes.push(licitacoes[licitacao])
+                        //console.log("teste " + licitacoes[licitacao]['Texto_encontrado'])
+                }
+            }
+            //console.log[lista_licitacoes]
+>>>>>>> e1f1660b16c51da92a84b400d2c25793c5f7db4c
             var resultados = document.getElementById("resultados")
 
             resultados.innerHTML = `<h3 class="subtopico" style="font-size: 30px; margin:auto; text-align: center;">Resultados</h3>`
