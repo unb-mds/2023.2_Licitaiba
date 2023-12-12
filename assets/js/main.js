@@ -35,7 +35,7 @@ function buscar_licitacoes() {
 
             // BUSCA EM SI
 
-            var limite = 1000000000000000000000000000000000000000000000000000000000000
+            var limite = 100
             for (let licitacao in licitacoes) {
                 if (limite <= 0) {
                     break
