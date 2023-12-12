@@ -44,7 +44,7 @@ function buscar_licitacoes() {
 
                 if (licitacoes[licitacao]['Texto_encontrado'].search(valorPesquisa) > -1) {
                     if (licitacoes[licitacao]['Data'] == filtroData || filtroData == '') {
-                        if (licitacoes[licitacao]['Municipio'].toLowerCase().replaceAll(" ", "_").replaceAll(/[àáãâ]/g, 'a').replaceAll(/[èéêẽ]/g, 'e').replaceAll(/[íìîĩ]/g, 'i').replaceAll(/[òóõô]/g, 'o').replaceAll(/[úùũû]/g, 'u').replaceAll(/[ç]/g, 'c') == filtroMunicipio || filtroMunicipio == 'todos') {
+                        if (licitacoes[licitacao]['Municipio'].toLowerCase().replaceAll(" ", "_").replaceAll(/[àáãâ]/g, 'a').replaceAll(/[èéêẽ]/g, 'e').replaceAll(/[íìîĩ]/g, 'i').replaceAll(/[òóõô]/g, 'o').replaceAll(/[úùũû]/g, 'u').replaceAll(/[ç]/g, 'c') == filtroMunicipio || filtroMunicipio == 'Todos') {
                             lista_licitacoes.push(licitacoes[licitacao])
                         }
                     }
