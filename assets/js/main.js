@@ -81,6 +81,7 @@ function buscar_licitacoes() {
     mostrar_licitacoes()
 }
 
+
 function mostrarResultados(id){
     const temp = fetch(url)
         .then(res => res.json())
@@ -96,6 +97,13 @@ function mostrarResultados(id){
             var modal = document.getElementById("modal-data")
             modal.innerHTML = (`
                 <p>${licitacoes[searchIndex]["Texto_encontrado"]}</p>
+            `)
+            var modal_buttons = document.getElementById("modal-buttons")
+            modal_buttons.innerHTML = (`
+
+                <button type="button" class="btn-2" style="padding: 5px 10px;"  onclick="window.location.href = 'https://www-storage.voxtecnologia.com.br/?m=sigpub.publicacao&f=334&i=${licitacoes[searchIndex]["Titulo_PDF"]}'"><i class="fa-solid fa-download"></i> Baixar PDF</button>
+                <button type="button" class="btn-3" style="padding: 5px 10px;" data-dismiss="modal">Fechar</button>
+            
             `)
 
         });
