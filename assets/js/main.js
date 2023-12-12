@@ -37,7 +37,6 @@ function buscar_licitacoes() {
 
             var limite = 100
             for (let licitacao in licitacoes) {
-                limite--
                 if (limite <= 0) {
                     break
                 }
@@ -46,6 +45,7 @@ function buscar_licitacoes() {
                     if (licitacoes[licitacao]['Data'] == filtroData || filtroData == '') {
                         if (licitacoes[licitacao]['Municipio'].toLowerCase().replaceAll(" ", "_").replaceAll(/[àáãâ]/g, 'a').replaceAll(/[èéêẽ]/g, 'e').replaceAll(/[íìîĩ]/g, 'i').replaceAll(/[òóõô]/g, 'o').replaceAll(/[úùũû]/g, 'u').replaceAll(/[ç]/g, 'c') == filtroMunicipio || filtroMunicipio == 'Todos') {
                             lista_licitacoes.push(licitacoes[licitacao])
+                            limite--
                         }
                     }
                 }
