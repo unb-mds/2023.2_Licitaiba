@@ -31,46 +31,32 @@ function buscar_licitacoes() {
     const mostrar_licitacoes = () => {
         temp.then((a) => {
             licitacoes = a;
-<<<<<<< HEAD
-=======
-            //console.log(licitacoes)
->>>>>>> e1f1660b16c51da92a84b400d2c25793c5f7db4c
             var lista_licitacoes = []
-            
+
             // BUSCA EM SI
 
             var limite = 100
             for (let licitacao in licitacoes) {
-<<<<<<< HEAD
                 limite--
-                if(limite <= 0){
+                if (limite <= 0) {
                     break
                 }
-                
-                if (licitacoes[licitacao]['Texto_encontrado'].search(valorPesquisa) > -1 ) {
-                    if (licitacoes[licitacao]['Data'] == filtroData || filtroData == ''){
-                        if (licitacoes[licitacao]['Municipio'].toLowerCase().replaceAll(" ", "_").replaceAll(/[àáãâ]/g, 'a').replaceAll(/[èéêẽ]/g, 'e').replaceAll(/[íìîĩ]/g, 'i').replaceAll(/[òóõô]/g, 'o').replaceAll(/[úùũû]/g, 'u').replaceAll(/[ç]/g, 'c') == filtroMunicipio || filtroMunicipio == 'todos'){
+
+                if (licitacoes[licitacao]['Texto_encontrado'].search(valorPesquisa) > -1) {
+                    if (licitacoes[licitacao]['Data'] == filtroData || filtroData == '') {
+                        if (licitacoes[licitacao]['Municipio'].toLowerCase().replaceAll(" ", "_").replaceAll(/[àáãâ]/g, 'a').replaceAll(/[èéêẽ]/g, 'e').replaceAll(/[íìîĩ]/g, 'i').replaceAll(/[òóõô]/g, 'o').replaceAll(/[úùũû]/g, 'u').replaceAll(/[ç]/g, 'c') == filtroMunicipio || filtroMunicipio == 'todos') {
                             lista_licitacoes.push(licitacoes[licitacao])
                         }
                     }
                 }
             }
-            
-=======
-                //console.log(licitacoes[licitacao]['Texto_encontrado'])
-                if (licitacoes[licitacao]['Texto_encontrado'].search(valorPesquisa) > -1) {
-                    lista_licitacoes.push(licitacoes[licitacao])
-                        //console.log("teste " + licitacoes[licitacao]['Texto_encontrado'])
-                }
-            }
-            //console.log[lista_licitacoes]
->>>>>>> e1f1660b16c51da92a84b400d2c25793c5f7db4c
+
             var resultados = document.getElementById("resultados")
 
             resultados.innerHTML = `<h3 class="subtopico" style="font-size: 30px; margin:auto; text-align: center;">Resultados</h3>`
 
 
-            if (lista_licitacoes.length == 0){
+            if (lista_licitacoes.length == 0) {
                 resultados.innerHTML += (`<div class="result-container d-flex justify-content-between align-items-center">
                         <p class="mb-0">Não foi encontrada nenhuma licitação com os termos usados 😢</p>
                         
@@ -96,7 +82,7 @@ function buscar_licitacoes() {
 }
 
 
-function mostrarResultados(id){
+function mostrarResultados(id) {
     const temp = fetch(url)
         .then(res => res.json())
         .then((out) => {
@@ -105,8 +91,8 @@ function mostrarResultados(id){
     const resultado = () => {
         temp.then((a) => {
             licitacoes = a;
-            
-            const searchIndex = licitacoes.findIndex((aux) => aux['Codigo_identificador']==id);
+
+            const searchIndex = licitacoes.findIndex((aux) => aux['Codigo_identificador'] == id);
 
             var modal = document.getElementById("modal-data")
             modal.innerHTML = (`
