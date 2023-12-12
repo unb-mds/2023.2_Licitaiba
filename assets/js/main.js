@@ -35,7 +35,7 @@ function buscar_licitacoes() {
 
             // BUSCA EM SI
 
-            var limite = 100
+            var limite = 1000000000000000000000000000000000000000000000000000000000000
             for (let licitacao in licitacoes) {
                 limite--
                 if (limite <= 0) {
@@ -67,7 +67,7 @@ function buscar_licitacoes() {
 
             for (let licitacao in lista_licitacoes) {
                 resultados.innerHTML += (`<div class="result-container d-flex justify-content-between align-items-center">
-                        <p class="mb-0">${lista_licitacoes[licitacao]['Texto_encontrado'].slice(0,230)}... <a href="#" onclick="mostrarResultados('${lista_licitacoes[licitacao]['Codigo_identificador']}')" class="details-link" data-toggle="modal" data-target="#myModal">Mais detalhes</a></p>
+                        <p class="mb-0">${lista_licitacoes[licitacao]['Texto_encontrado'].slice(0,280)}... <a href="#" onclick="mostrarResultados('${lista_licitacoes[licitacao]['Codigo_identificador']}')" class="details-link" data-toggle="modal" data-target="#myModal">Mais detalhes</a></p>
                         
                     </div>
                 `);
