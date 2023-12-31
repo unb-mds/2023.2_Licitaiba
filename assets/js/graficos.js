@@ -117,7 +117,7 @@ function atualizarGrafico(dados, municipioSelecionado, ano) {
 
 }
 
-carregarDadosGrafico("Todos", 2023);
+carregarDadosGrafico("Todos", 2024);
 
 var urlParams = new URLSearchParams(window.location.search);
 var valorPesquisa = urlParams.get('pesquisar_por');
