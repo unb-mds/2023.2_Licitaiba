@@ -124,5 +124,5 @@ var valorPesquisa = urlParams.get('pesquisar_por');
 
 if (valorPesquisa) {
     var filtroMunicipio = urlParams.get('filtro_municipio');
-    carregarDadosGrafico(filtroMunicipio, 2023)
+    carregarDadosGrafico(filtroMunicipio, 2024)
 }
